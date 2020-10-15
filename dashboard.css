@@ -23,7 +23,7 @@ input:focus, input:active {
 }
 
 body {
-  background-image: url("./DASHBOARD/Background-effect.png");
+  background-image: url("Background-effect.png");
   background-size: cover;
   background-attachment: fixed;
 }
