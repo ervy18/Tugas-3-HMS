@@ -1,0 +1,281 @@
+/* ALL VERSION */
+* {
+  font-family: 'century gothic';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li, a {
+  list-style: none;
+  color: white;
+}
+
+/* Utility */
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+input:focus, input:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  background-image: url("./DASHBOARD/Background-effect.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Header */
+.header {
+  background: rgba(100, 100, 100);
+  padding: 10px 0;
+}
+
+/* Navbar */
+.Navbar-logo img {
+  height: 75px;
+  margin-top: -20px;
+  filter: drop-shadow(0px 0px 0.8px #ffff);
+}
+
+.navbar-icon img {
+  height: 20px;
+  border: none;
+}
+
+.nav-link:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid #750000;
+  margin-bottom: -3px;
+}
+
+.dropdown-menu {
+  background-color: rgb(234, 234, 235);
+}
+
+.fa-caret-down {
+  color: #750000 !important;
+}
+
+/* Nav-side */
+.wrapper {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.wrapper .sidebar {
+  position: fixed;
+  width: 150px;
+  height: 100%;
+  padding: 5px 0;
+  display: none;
+}
+
+.wrapper .sidebar li {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.wrapper .sidebar a {
+  color: #ffff;
+  font-size: 13px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  color: white;
+  background: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.jumbotron h1 {
+  background-color: white;
+  color: #750000;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+.jumbotron p {
+  margin: 30px;
+}
+
+.jumbotron .btn {
+  background-color: #22959B;
+  color: white;
+  border-radius: 40px;
+}
+
+.jumbotron .btn:hover {
+  color: #750000;
+  background-color: white;
+}
+
+.jumbotron .faq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(240, 240, 240, 0.8);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #750000
+}
+
+.jumbotron .faq p {
+  margin: 0;
+}
+
+.faq {
+  margin: 30px 0;
+  text-shadow: none;
+}
+
+/* Info-Panel */
+.info-panel {
+  flex: none;
+}
+
+.info {
+  margin: 50px;
+}
+
+.info-panel h2{
+  color: #750000;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.info-panel p {
+  margin: 0;
+}
+
+.info-panel a {
+  padding: 1px 15px;
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 15px;
+}
+
+/* Footer */
+.footer {
+  background-color: #22959B;
+  color: white;
+  padding: 0px 20px 25px 35px;
+}
+
+.atas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.atas img {
+  margin-top: -80px;
+}
+
+.kanan {
+  margin-top: 20px;
+}
+
+.footer .keterangan {
+  display: grid;
+  text-align: right;
+}
+
+.footer a {
+  color: white;
+  margin-right: 15px;
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+}
+
+.sosmed {
+  justify-content: space-between;
+  float: right;
+  margin-top: 10px;
+}
+
+.bawah {
+  width: 50%;
+  margin-top: -70px;
+}
+
+.fab, .fas {
+  color: white;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+  .header {
+    background: rgba(60, 60, 60, 0.5);
+  }
+
+  .navbar-nav li {
+    margin-left: 30px;
+  }
+
+  .nav-link {
+    font-weight: bold;
+  }
+
+  .wrapper .sidebar {
+    display: block;
+  }
+
+  .jumbotron {
+    margin: 50px;
+  }
+
+  .jumbotron p {
+    margin: 50px;
+  }
+
+  .info-panel {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .info {
+    margin: 0;
+  }
+
+  .info-panel p {
+    margin: 0;
+  }
+
+  .footer .keterangan {
+    display: flex;
+  }
+
+  .atas img {
+    margin-top: 0px;
+  }
+
+  .bawah {
+    margin-top: 0px;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 575.98px) {
+  .jumbotron h1 {
+    font-size: 30px;
+  }
+
+  .footer .footer-logo {
+    margin-top: -10px;
+  }
+
+  .footer .bawah {
+    margin-top: -80px;
+  }
+}
